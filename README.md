@@ -6,15 +6,6 @@ It implement the match and eliminate logic of "Summon and Merge"(召唤与合成
 # How to use it?
 There is a briefly tutorial in the file "run.java". It gives you a galance of what the simulator does and how to use it. You may use it as the start point.
 
-# The match and eliminate logic
-In the simulator, each cube has two attributes: level and monster.  
-In each game we will always has 3 kind of monsters, let's named them A, B and C.  
-Each monster can be one of 5 levels: 0~4.  
-At the beginning of the game, all of the monsters will be level 0.  
-After one movement(switch/remove cube), if there exist at least 3 same node in one line(either horizontal/vertical/diagonal) game will change to matching mode.
-In the matching mode, game will eliminate the matched cubes and create a new cube at the center 
-
-
 
 # Tutorial
 ```
@@ -49,3 +40,13 @@ System.out.println("============================================");
 output:
 
 ![20200922134846](https://user-images.githubusercontent.com/7517810/93918439-5bb6d400-fcda-11ea-973f-70deb5caddf9.png)
+
+# The match and eliminate logic
+In the simulator, each cube has two attributes: level and monster.  
+In each game we will always has 3 kind of monsters.
+Each monster can be one of 5 levels: 0~4.  
+At the beginning of the game, all of the monsters will be level 0.  
+After one movement(switch/remove cube), if there exist at least 3 same node in one line(either horizontal/vertical/diagonal) game will start matching process.  
+In the matching process, game will eliminate the matched cubes and create a cube at the center.  
+The new cube has the same monster type as the eliminate cube, and level get increased by 1.  
+After the matching process, the sand board will has some empty slots. Program will drop some random cubes to fill the slots.
