@@ -49,4 +49,5 @@ At the beginning of the game, all of the monsters will be level 0.
 After one movement(switch/remove cube), if there exist at least 3 same node in one line(either horizontal/vertical/diagonal) game will start matching process.  
 In the matching process, game will eliminate the matched cubes and create a cube at the center.  
 The new cube has the same monster type as the eliminate cube, and level get increased by 1.  
-After the matching process, the sand board will has some empty slots. Program will drop some random cubes to fill the slots.
+After the matching process, the sand board will has some empty slots. Program will drop some random cubes to fill the slots.  
+For more detail of the logic, you may check this thread: https://www.taptap.com/topic/7481354
