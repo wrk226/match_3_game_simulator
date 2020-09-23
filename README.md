@@ -1,5 +1,5 @@
 # match_3_game_simulator
-**This is a match three game simulator.**
+**This is a match 3 game simulator.**
 
 It implement the match and eliminate logic of "Summon and Merge"(召唤与合成). It contains many handy and useful functions, so you can use it to build your own match 3 games.
 
